@@ -4,9 +4,8 @@ pipeline {
    stages {
       stage('Build Apk') {
          steps {
-        bat "gradlew clean"
-            bat "gradlew tasks"
-        bat "gradlew installDebug --scan"
+        bat "gradlew build"
+      
          }
       }
    }
