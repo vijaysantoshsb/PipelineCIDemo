@@ -6,7 +6,7 @@ pipeline {
          steps {
         bat "gradlew clean"
             bat "gradlew tasks"
-        bat "gradlew uninstallRelease --scan"
+        bat "gradlew installDebug --scan"
          }
       }
    }
