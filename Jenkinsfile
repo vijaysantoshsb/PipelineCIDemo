@@ -4,7 +4,7 @@ pipeline {
    stages {
       stage('Build Apk') {
          steps {
-        bat "clean"
+        bat "./gradlew clean"
       
          }
       }
