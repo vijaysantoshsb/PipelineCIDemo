@@ -5,7 +5,8 @@ pipeline {
       stage('Build Apk') {
          steps {
         bat "gradlew clean"
-        bat 'gradle build --scan'
+            bat "gradlew tasks"
+        bat "gradlew assembleDebug --scan"
          }
       }
    }
